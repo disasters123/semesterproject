@@ -55,7 +55,7 @@ L.control.scale().addTo(map);
 L.control.layers(basemaps).addTo(map);
 
 //read wheather forecast and connect it to scenarios
-$.getJSON("forecast.txt", function(data){
+$.getJSON("forecast.json", function(data){
     console.log(data)
 
     layerGroup = L.layerGroup();
